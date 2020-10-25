@@ -1,0 +1,80 @@
+##############################################################
+#  Buddyfriends 2.0 pour Xoops 2                             #
+#                                                            #
+#  Original version by:                                      #
+#  Tim Cook tim@boinng.com and p4@directfriends.com          #
+#                                                            #
+#  Adaptation a Xoops et modification:                       #
+#  Pascal Le Boustouller - http://www.e-xoopsfr.com          #
+#  et P4 - http://www.directfriends.com                      #
+#                                                            #
+#  Modules Buddy et DirectFriends regroupés dans BuddyFriends#
+#  par Lmaix : http://www.bahut.com/                         #
+#  Fichiers explicatifs, logo et son                         #
+#  par sylvain B. : http://larando.com/xoops/                #
+#                                                            #
+#  Licence : GPL                                             #
+#  Merci de laisser ce copyright en place...                 #
+##############################################################
+
+
+
++ installation :
+- décompressez les fichiers et répertoires dans le répertoire modules de Xoops.
+- n'oubliez pas ensuite d'activer Buddyfriends dans votre administration
+
+
+Attention, à effectuer avant installation du module :
+
+Regardez bien qu'elle est votre version de xoops 2!
+Ceci est très important, en effet à partir de la version
+xoops2 rc3 la gestion des thèmes a été modifiée.
+Pour cette raison, il existe deux versions du fichier buddy.php.
+
+Vous trouverez la version concernant :
+- xoops2 rc1 -> xoops2 rc2 dans le répertoire buddyphprc2.
+- xoops2 rc3 -> xoops 2.0.2 dans le répertoire buddyphp202
+
+Par défaut, la version du fichier dans le répertoire
+du module est celle destinée à xoops 2.0.2.
+
+Pour pouvoir utiliser buddyfriends de façon normale en fonction
+de votre version de xoops, remplacez simplement le fichier buddy.php
+du module par celui qui vous convient!
+
+De plus, dans le répertoire newmessagewav, vous avez deux autres
+répertoires contenants un son différents.
+A vous de choisir celui qui vous plaît le plus.
+Pour cela, copiez le nouveau son en lieu et place de l'actuel.
+Vous pouvez, biensûr, en choisir un autre de votre composition.
+
+--------------------------------------------------------------
+
+Avis aux webmasters ayant déjà téléchargé le module DirectFriends
+
+Les tables de ces deux modules sont différentes, même structure
+mais différentes.
+Si vous souhaitez bénéficier, et faire bénéficier, des amis déjà
+enregistrés dans la table de DirectFriends, il vous suffit de :
+
+Via PhpMyAdmin, recherchez la table prefixxoops_myfriends de 
+DirectFriends, choisissez ensuite Exporter -> Données seulement.
+Vous obtenez ainsi un fichier sql contenant toutes les données
+(les vôtres mais aussi celles de vos membres) enregistrées.
+A l'aide d'un éditeur, ouvrez le fichier sql et renommez la table
+myfriends en buddyfriends. Procédez ainsi pour chaque entrée.
+Ceci fait et après installation de BuddyFriends, allez dans la table
+buddyfriends et faites SQL (executer une requête), parcourir et 
+cherchez votre fichier sql que vous venez de modifier.
+Cliquez ensuite sur Exécuter et voilà.
+Vous pouvez maintenant désactiver DirectFriends et le désinstaller.
+
+
+Pour toutes questions:
+
+- http://www.frxoops.org  FORUM
+- https://xoops.org FORUM
+
+Ou sur nos sites respectifs.
+
+Sylvain B. webmaster XOOPS-JP 2.0.2 SITE TEST
